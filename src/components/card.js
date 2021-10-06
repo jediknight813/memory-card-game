@@ -1,7 +1,7 @@
 function Card() {
     return(
       <div>
-        <h1> card name </h1>      
+        <h1> war </h1>      
      </div>  
     );
 }
