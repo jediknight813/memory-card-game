@@ -40,3 +40,15 @@
     position: absolute;
     right: 40%;
 }
+
+.card_grid {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 15%;
+    background-color: gray;
+    grid-template-rows: auto;
+}
+
+
