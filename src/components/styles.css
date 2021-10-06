@@ -1,0 +1,42 @@
+.footer {
+    width: 110%;
+    height: 5%;
+    background-color: rgb(49, 58, 58);
+    bottom: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+.footer_text {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    right: 40%;
+}
+
+.footer_link {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    position: absolute;
+    top: 25%;
+    right: 37%;
+}
+
+.header {
+    width: 110%;
+    height: 5%;
+    background-color: rgb(49, 58, 58);
+    top: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+.header_text {
+    font-family:fantasy;
+    top: -39%;
+    color: white;
+    position: absolute;
+    right: 40%;
+}
