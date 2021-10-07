@@ -43,12 +43,14 @@
 
 .card_grid {
     position: absolute;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     width: 80%;
     height: 70%;
     left: 10%;
     top: 15%;
     background-color: gray;
-    grid-template-rows: auto;
 }
 
 
@@ -72,4 +74,15 @@
     font-size: 25px;
     width: 30%;
     height: 30%;
+}
+
+
+.cardClass{
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 60px;
+    grid-gap: 10px;
+    width: 205px;
+    height: 250px;
+    background-color: blue;
 }
