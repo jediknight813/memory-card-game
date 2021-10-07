@@ -52,3 +52,24 @@
 }
 
 
+.scoreCounter {
+    font-family: fantasy;
+    left: 20%;
+    top: 3%;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    width: 30%;
+    height: 30%;
+}
+
+.hiScoreCounter {
+    font-family: fantasy;
+    left: 65%;
+    top: 3%;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    width: 30%;
+    height: 30%;
+}
