@@ -1,29 +1,31 @@
-//import Card from './card';
 import { useState } from 'react';
 import './styles.css';
 
 
-const card_list = [ {name: "bob", image: "src/images/image.jpg" }, {name: "dave", image: "src"}, {name: "dave", image: "src"}, {name: "dave", image: "src"}, {name: "dave", image: "src"}, {name: "dave", image: "src"}, {name: "dave", image: "src"}, {name: "dave", image: "src"} ]
+const card_list = [{id: 0, selected: false, name: "bob", image: "src/images/image.jpg" }, {id: 1, selected: false, name: "dave", image: "src"}, {id: 2, selected: false, name: "dave", image: "src"}, {id: 3, selected: false, name: "dave", image: "src"}, {id: 4, selected: false, name: "dave", image: "src"}, {id: 5, selected: false, name: "dave", image: "src"}, {id: 6, selected: false, name: "dave", image: "src"}, {id: 7, selected: false ,name: "dave", image: "src"}]
+const game_Data = {score: 0, hiScore: 0}
 
-const game_Data = {score: 3, hiScore: 2}
 
 const CardGrid = ({ CurrentScore, CurrentHiScore }) => {
     const [cards, setCards] = useState()
-
     useState(() => {
         setCards(
             <div className="card_grid">{
                 card_list.map(cards =>
                 <div className="card" key={Math.random()}>
-                    <img onClick={shuffleCards} className="cardClass" alt={cards.name} src={cards.image} /> 
+                    <img id={cards.id}  onClick={() => sayHello('James')} className="cardClass" alt={cards.name} src={cards.image} /> 
                 </div>)}
             </div>  
     )}, []);
 
+    function sayHello(name) {
+        alert(`hello, ${name}`);
+      }
+      
+
 
     function shuffleCards() {
-        let new_card_list = card_list.sort(() => Math.random() - 0.5)
-        console.log(game_Data['score'])
+        let new_card_list = card_list.sort(() => Math.random() - Math.random())
         CurrentScore(game_Data['score'])
         CurrentHiScore(game_Data['hiScore'])
         setCards(
@@ -32,15 +34,13 @@ const CardGrid = ({ CurrentScore, CurrentHiScore }) => {
                 <div className="card" key={Math.random()}>
                     <img onClick={shuffleCards} className="cardClass" alt={cards.name} src={cards.image} /> 
                 </div>)}
-            </div>  
-    )
-        
-    }
+            </div>  )}
 
     
     return(
         cards
     );
+
 
 }
 
