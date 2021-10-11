@@ -1,10 +1,11 @@
 import './styles.css';
 
 
-function scoreCounter() {
+function scoreCounter(data) {
+    console.log(data)
     return(
         <div className="scoreCounter">
-            <h1> Score: 0 </h1>
+            <h1> Score: {data['data']} </h1>
         </div>
     );
 }
