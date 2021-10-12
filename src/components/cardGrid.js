@@ -13,13 +13,26 @@ const CardGrid = ({ CurrentScore, CurrentHiScore }) => {
             <div className="card_grid">{
                 card_list.map(cards =>
                 <div className="card" key={Math.random()}>
-                    <img id={cards.id}  onClick={() => sayHello('James')} className="cardClass" alt={cards.name} src={cards.image} /> 
+                    <img onClick={() => uodateScore(cards.id, cards.selected)} className="cardClass" alt={cards.name} src={cards.image} /> 
                 </div>)}
             </div>  
     )}, []);
 
-    function sayHello(name) {
-        alert(`hello, ${name}`);
+
+    function uodateScore(id, selected) {
+        card_list.forEach(element => 
+        {if (element['id'] === id) {
+            if (element['selected'] === false){
+                game_Data['score'] += 1
+                element['selected'] = true
+                if (game_Data['score'] > game_Data['hiScore']) {
+                    game_Data['hiScore'] = game_Data['score']
+                }
+            }
+        }}    
+        );
+        shuffleCards()
+
       }
       
 
@@ -32,7 +45,7 @@ const CardGrid = ({ CurrentScore, CurrentHiScore }) => {
             <div className="card_grid">{
                 new_card_list.map(cards =>
                 <div className="card" key={Math.random()}>
-                    <img onClick={shuffleCards} className="cardClass" alt={cards.name} src={cards.image} /> 
+                    <img onClick={() => uodateScore(cards.id, cards.selected)} className="cardClass" alt={cards.name} src={cards.image} /> 
                 </div>)}
             </div>  )}
 
