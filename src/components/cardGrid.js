@@ -1,8 +1,17 @@
 import { useState } from 'react';
 import './styles.css';
 
+import imageOne from './images/imageOne.jpg'
+import imageTwo from 'src/components/images/ImageTwo.JPG'
+import imageThree from 'src/components/images/imageThree.jpg'
+import imageFour from 'src/components/images/ImageFour.jpg'
+import imageFive from 'src/components/images/ImageFive.jpg'
+import imageSix from 'src/components/images/imageSix.PNG'
+import imageSeven from 'src/components/images/imageSeven.jpg'
+import imageEight from 'src/components/images/imageEight.png'
 
-const card_list = [{id: 0, selected: false, name: "bob", image: "src/images/image.jpg" }, {id: 1, selected: false, name: "dave", image: "src"}, {id: 2, selected: false, name: "dave", image: "src"}, {id: 3, selected: false, name: "dave", image: "src"}, {id: 4, selected: false, name: "dave", image: "src"}, {id: 5, selected: false, name: "dave", image: "src"}, {id: 6, selected: false, name: "dave", image: "src"}, {id: 7, selected: false ,name: "dave", image: "src"}]
+
+const card_list = [{id: 0, selected: false, name: "bob", image: imageOne }, {id: 1, selected: false, name: "dave", image: "src"}, {id: 2, selected: false, name: "dave", image: "src"}, {id: 3, selected: false, name: "dave", image: "src"}, {id: 4, selected: false, name: "dave", image: "src"}, {id: 5, selected: false, name: "dave", image: "src"}, {id: 6, selected: false, name: "dave", image: "src"}, {id: 7, selected: false ,name: "dave", image: "src"}]
 const game_Data = {score: 0, hiScore: 0}
 
 
