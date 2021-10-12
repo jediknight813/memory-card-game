@@ -25,14 +25,28 @@ const CardGrid = ({ CurrentScore, CurrentHiScore }) => {
             if (element['selected'] === false){
                 game_Data['score'] += 1
                 element['selected'] = true
-                if (game_Data['score'] > game_Data['hiScore']) {
-                    game_Data['hiScore'] = game_Data['score']
-                }
             }
+            else {
+                game_Data['score'] = 0
+                resetCards(card_list)
+            }
+            
         }}    
         );
+
+        if (game_Data['score'] > game_Data['hiScore']) {
+            game_Data['hiScore'] = game_Data['score']
+        }
+
         shuffleCards()
 
+      }
+
+
+      function resetCards(dict){
+          dict.forEach(element => {
+              element['selected'] = false
+          })
       }
       
 
