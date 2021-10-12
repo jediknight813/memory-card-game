@@ -6,7 +6,7 @@ import imageTwo from './images/ImageTwo.JPG'
 import imageThree from './images/imageThree.jpg'
 import imageFour from './images/ImageFour.jpg'
 import imageFive from './images/ImageFive.jpg'
-import imageSix from './images/imageSix.PNG'
+import imageSix from './images/imageSix.jpg'
 import imageSeven from './images/imageSeven.jpg'
 import imageEight from './images/imageEight.png'
 
