@@ -11,7 +11,7 @@ import { render } from '@testing-library/react';
 import { useState } from 'react/cjs/react.development';
 
 
-function App() {
+export function App() {
   const [currentScore, updateCurrentScore] = useState(0)
   const [currentHiScore, updateCurrentHiScore] = useState(0)
 
