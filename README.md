@@ -1,4 +1,4 @@
-a memory card game made for the odin project.
+a memory card game website made for the odin project.
 
 link to the website: 
 
