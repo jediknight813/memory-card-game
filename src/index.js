@@ -1,14 +1,11 @@
-import React from 'react';
-//import ReactDOM from 'react-dom';
-//import App from './App';
-//import Card from './components/card';
+import React, { useState } from 'react';
 import Footer from './components/footer';
 import Header from './components/header';
 import CardGrid from './components/cardGrid';
 import ScoreCounter from './components/scorecounter';
 import HiScoreCounter from './components/hiScoreCounter';
 import { render } from '@testing-library/react';
-import { useState } from 'react/cjs/react.development';
+
 
 
 function App() {
